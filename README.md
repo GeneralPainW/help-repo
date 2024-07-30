@@ -83,7 +83,7 @@ graph LR;
 A[untracked] -- "git add" --> B[staget + tracked];
 B -- "git commit" --> C[tracked];
 C -- "изменения в файле" --> D[modified];
-C -- "git add" --> B;
+D -- "git add" --> B;
 B -- "изменения в файле" --> D;
 ```
 
