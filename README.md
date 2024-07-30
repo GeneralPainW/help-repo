@@ -80,8 +80,8 @@
 
 ```mermaid
 graph LR;
-A[untracked (неотслеживаемый)] -- "git add" --> B[staget (в списке на коммит) + tracked];
-B -- "git commit" --> C[tracked (отслеживаемый)];
+A[untracked] -- "git add" --> B[staget + tracked];
+B -- "git commit" --> C[tracked];
 C -- "изменения в файле" --> D[modified];
 C -- "git add" --> B;
 B -- "изменения в файле" --> D;
